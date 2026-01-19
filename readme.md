@@ -1,0 +1,3 @@
+#My Omarchy setup
+
+

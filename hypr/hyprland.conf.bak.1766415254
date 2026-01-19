@@ -1,0 +1,46 @@
+# Learn how to configure Hyprland: https://wiki.hyprland.org/Configuring/
+
+# Use defaults Omarchy defaults (but don't edit these directly!)
+source = ~/.local/share/omarchy/default/hypr/autostart.conf
+source = ~/.local/share/omarchy/default/hypr/bindings/media.conf
+source = ~/.local/share/omarchy/default/hypr/bindings/clipboard.conf
+source = ~/.local/share/omarchy/default/hypr/bindings/tiling-v2.conf
+source = ~/.local/share/omarchy/default/hypr/bindings/utilities.conf
+source = ~/.local/share/omarchy/default/hypr/envs.conf
+source = ~/.local/share/omarchy/default/hypr/looknfeel.conf
+source = ~/.local/share/omarchy/default/hypr/input.conf
+source = ~/.local/share/omarchy/default/hypr/windows.conf
+source = ~/.config/omarchy/current/theme/hyprland.conf
+
+# Change your own setup in these files (and overwrite any settings from defaults!)
+source = ~/.config/hypr/monitors.conf
+source = ~/.config/hypr/input.conf
+source = ~/.config/hypr/bindings.conf
+source = ~/.config/hypr/looknfeel.conf
+source = ~/.config/hypr/autostart.conf
+
+# Add any other personal Hyprland configuration below
+# windowrule = workspace 5, class:qemu
+animations {
+    enabled = true
+
+    # Bézier curve for a smooth "ease-out" feel
+    bezier = mySmoothCurve, 0.05, 0.9, 0.1, 1.05
+    # Syntax: name, enable, duration (1 = 100ms), curve, style
+    
+    # This is the line that controls workspace switching:
+    animation = workspaces, 1, 6, mySmoothCurve, slide
+}
+
+animations {
+    enabled = true
+    # This bezier curve goes slightly above 1.1 to create the bounce back
+    bezier = overshot, 0.05, 0.9, 0.1, 1.1
+
+    animation = windowsIn, 1, 6, overshot, popin 70%
+    animation = windowsOut, 1, 6, overshot, popin 70%
+    animation = windowsMove, 1, 6, overshot, slide
+}
+
+layerrule = blur, waybar
+layerrule = ignorezero, waybar
