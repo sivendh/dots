@@ -1,3 +1,3 @@
-#My Omarchy setup
+# My Omarchy setup
 
 
