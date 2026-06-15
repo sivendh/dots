@@ -1,37 +1,47 @@
-
-[window]
-opacity = 0.4
-padding.x = 50
-padding.y = 40
-
-[colors]
-transparent_background_colors = true
-# background_opacity = 0.3 # Does not work currently in alacritty
-
 [colors.primary]
-foreground = "#e7e9ea"
-background = "#000000"
-
-[colors.normal]
-black   = "#121212"
-red     = "#8a8a8a"
-green   = "#e7e9ea"
-yellow  = "#9e9e9e"
-blue    = "#626262"
-magenta = "#8a8a8a"
-cyan    = "#767676"
-white   = "#e0e0e0"
-
-[colors.bright]
-black   = "#626262"
-red     = "#9e9e9e"
-green   = "#767676"
-yellow  = "#b2b2b2"
-blue    = "#626262"
-magenta = "#8a8a8a"
-cyan    = "#9e9e9e"
-white   = "#e7e9ea"
+background = "#101315"
+foreground = "#cacccc"
 
 [colors.cursor]
-text   = "#fadad1"
-cursor = "#e7e9ea"
+text = "#101315"
+cursor = "#cacccc"
+
+[colors.vi_mode_cursor]
+text = "#101315"
+cursor = "#cacccc"
+
+[colors.search.matches]
+foreground = "#101315"
+background = "#d9dbdc"
+
+[colors.search.focused_match]
+foreground = "#101315"
+background = "#565d60"
+
+[colors.footer_bar]
+foreground = "#101315"
+background = "#cacccc"
+
+[colors.selection]
+text = "#101315"
+background = "#798186"
+
+[colors.normal]
+black = "#101315"
+red = "#565d60"
+green = "#9fa5a9"
+yellow = "#d9dbdc"
+blue = "#798186"
+magenta = "#aeaeae"
+cyan = "#707070"
+white = "#cbc2be"
+
+[colors.bright]
+black = "#4b4e55"
+red = "#de6145"
+green = "#343d41"
+yellow = "#c9c2b4"
+blue = "#5d6367"
+magenta = "#9a9a9a"
+cyan = "#707070"
+white = "#a5aeb4"

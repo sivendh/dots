@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 set -u
 
 if ! command -v playerctl >/dev/null 2>&1; then
@@ -51,11 +51,11 @@ if [[ "$length_us" =~ ^[0-9]+$ ]] && is_number "$position_s" && [[ "$length_us" 
   length_s=$(awk "BEGIN {printf \"%d\", $length_us / 1000000}")
   position_int=$(awk "BEGIN {printf \"%d\", $position_s}")
 
-  if (( length_s > 0 )); then
+  if ((length_s > 0)); then
     bar_len=20
     filled=$((position_int * bar_len / length_s))
-    if (( filled < 0 )); then filled=0; fi
-    if (( filled > bar_len )); then filled=$bar_len; fi
+    if ((filled < 0)); then filled=0; fi
+    if ((filled > bar_len)); then filled=$bar_len; fi
     empty=$((bar_len - filled))
 
     bar=$(printf "%${filled}s" "" | tr ' ' '#')

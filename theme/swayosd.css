@@ -1,17 +1,30 @@
-@define-color background-color #000000;
-@define-color border-color #e7e9ea;
-@define-color label #e7e9ea;
-@define-color image #e7e9ea;
-@define-color progress #e7e9ea;
+@define-color background-color #101315;
+@define-color border-color #2f353b;
+@define-color label #cacccc;
+@define-color image #cacccc;
+@define-color progress #d9dbdc;
 
-/* Main OSD container - rounds the entire popup */
-window.background,
-#osd,
-.osd,
-swayosd-window {
-    padding: 10px 15px;
-    border-width: 1px;
-    border-radius: 12px;          /* Adjust this value: 12px–24px is nice and modern */
-    /* Optional: softer/more pill-like */
-    /* border-radius: 999px; */   /* Fully pill-shaped if width/height allows */
+
+/* Cancel out Omarchy settings */
+window:not(:backdrop),
+window:backdrop {
+    border: none;
+    border-width: 0;
+    border-radius: 4px;
+    background-color: transparent;
+    box-shadow: none;
+    padding: 12px;
+}
+
+
+/* Draw a new background */
+window:not(:backdrop) #container,
+window:backdrop #container {
+    border: 2px solid @border-color;
+    border-radius: 6px;
+    background-color: @background-color;
+    padding: 12px;
+    background-clip: padding-box;
+    box-shadow: 2px 2px 9px 0px rgba(22, 22, 22, 1);
+
 }
