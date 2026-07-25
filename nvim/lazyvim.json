@@ -1,0 +1,10 @@
+{
+  "extras": [
+    "lazyvim.plugins.extras.util.project",
+    "lazyvim.plugins.extras.vscode"
+  ],
+  "news": [
+
+  ],
+  "version": 8
+}
