@@ -7,6 +7,7 @@ Dotfiles for my Hyprland-based Omarchy Linux desktop.
 - **`hypr/`** – Hyprland configuration files (bindings, input, monitors, idle, lock, etc.)
 - **`waybar/`** – Waybar status bar config and themes
 - **`quickshell/`** – QuickShell configuration (launcher shell, quick apps, icons)
+- **`nvim/`** – Neovim configuration (init.lua, plugins, keymaps, options, lazy.nvim)
 - **`theme/`** – Themed configs for various applications (Alacritty, Kitty, Ghostty, btop, Mako, Neovim, Obsidian, etc.) plus wallpapers
 - **`scripts/`** – Utility scripts
 
@@ -19,5 +20,6 @@ Symlink or copy the configs into their respective `~/.config/` directories.
 - Hyprland window manager with custom keybindings and layout
 - Waybar system status bar
 - QuickShell launcher and quick apps panel
+- Neovim editor with lazy.nvim plugin manager and custom configurations
 - Theme configurations for multiple applications
 - Utility scripts for system management
